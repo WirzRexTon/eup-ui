@@ -1,6 +1,6 @@
 fx_version "cerulean"
 game "gta5"
-lua54 "yes"
+
 
 local uniformFile = 'outfits.json'
 file(uniformFile)
@@ -16,3 +16,7 @@ client_scripts {
  }
  
 client_script "eup_ui.lua"
+
+
+
+
