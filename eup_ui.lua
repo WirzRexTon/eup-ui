@@ -1,4 +1,15 @@
-outfits = json.decode(LoadResourceFile(GetCurrentResourceName(), GetResourceMetadata(GetCurrentResourceName(), 'uniform_file')))
+outfits = {}
+
+local function LoadData()
+    outfits = LoadResourceFile(GetCurrentResourceName(), GetResourceMetadata(GetCurrentResourceName(), 'uniform_file'))
+    if outfits ~= nil then
+        outfits = json.decode(outfits)
+    else
+        outfits = {}
+    end
+    print('Loaded data!')
+end
+LoadData()
 
 function string.split(inputstr, sep)
     if sep == nil then
