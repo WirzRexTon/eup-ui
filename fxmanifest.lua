@@ -6,7 +6,6 @@ local uniformFile = 'outfits.json'
 file(uniformFile)
 uniform_file(uniformFile)
 
-
 client_scripts {
     "RageUI/RMenu.lua",
     "RageUI/menu/RageUI.lua",
