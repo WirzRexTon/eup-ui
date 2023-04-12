@@ -1,13 +1,10 @@
-fx_version 'adamant'
-games { 'gta5' }
-
-
+fx_version "cerulean"
+game "gta5"
+lua54 "yes"
 
 local uniformFile = 'outfits.json'
-
 file(uniformFile)
 uniform_file(uniformFile)
-
 
 client_scripts {
     "RageUI/RMenu.lua",
